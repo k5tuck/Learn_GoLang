@@ -2,15 +2,15 @@
 
 ## Table of Contents
 
-1. [Flat](#flat) \*Small Projects
+`*` - ideal
+
+1. [Flat](#flat) `*`Small Projects
 2. [Layered (MVC)](#layered)
 3. [Modular](#modular)
-4. [Data Driven Domain (DDD)](<#data-driven-domain-(ddd)>) \*Large Projects
+4. [Data Driven Domain (DDD)](#data-driven-domain) `*`Large Projects
 5. [DDD-Hexagonal](#ddd-hexagonal)
 
 <center>For our file structure examples, we will use Reviews of Books as an example. As well as two storage types: JSON and Database samples.</center>
-
-`* - ideal`
 
 ### [Flat](#table-of-contents)
 
@@ -118,7 +118,7 @@ Data Driven Domain, or DDD, is a technique for how to think of organization, str
   - Repositories
   - Factory
 
-### [Data Driven Domain (DDD)](#table-of-contents)
+### [Data Driven Domain](#table-of-contents)
 
 ```
 /
