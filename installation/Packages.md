@@ -50,9 +50,12 @@ root-directory
 
 There are different types of packages that you can call in Go, or rather different "ways" to call packages in Go.
 
-When declaring a package in your Go file, it will be the name of your parent folder.
+1. Using a package from the "Standard" Library
+2. Importing a package from a Github Repository
 
-Example: add.go
+When declaring a package in your Go file, it will be the name of your parent folder. Take the example directory above:
+
+(Example: add.go) - Standard Library
 
 ```Go
 package numbers
@@ -62,4 +65,29 @@ import "math"
 func add(i int, j int) int {
     i + j
 }
+```
+
+(Example: server.go) - Github Repository
+
+```Go
+package main
+
+import {
+    "fmt"
+    "net/http"
+    "encoding/json"
+    "strconv"
+
+    "github.com/julienschmidt/httprouter"
+}
+
+func Handler(a adding.Accounts, l listing.Accounts) http.Handler {
+	router := httprouter.New()
+
+    router.GET("/accounts/:id", HandlerFunction(l))
+    router.POST("/accounts", HandlerFunction(a))
+
+	return router
+}
+
 ```
