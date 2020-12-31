@@ -192,7 +192,7 @@ Cons
             └── review.go
 ```
 
-<center>OR</center>
+<center><h3>OR</h3></center>
 <br />
 
 ```
@@ -240,13 +240,12 @@ Pros
 4. Changes to one Domain of the app should only effect that specific Domain
 5. Dependencies **only point inwards**.
 
-<br />
 <h5>
 Notes, Samples, and Architecture Taken from:
 
 [Kat Zien](https://github.com/katzien/go-structure-examples) - Github |
 [How Do You Structure Your Go Apps?](https://www.youtube.com/watch?v=Qtk9FFOoT5M&t=11s) - Youtube
-
+|
 [Marcus Olsson's (GoDDD App)](https://github.com/marcusolsson/goddd) - Github
 
 </h5>

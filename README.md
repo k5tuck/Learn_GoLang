@@ -21,3 +21,5 @@ This repo is an on-going culmination of what I have learned from the time I have
 13. [Interfaces](https://github.com/k5tuck/Learn_GoLang/tree/main/interfaces)
 14. [GoRoutines](https://github.com/k5tuck/Learn_GoLang/tree/main/goroutines)
 15. [Channels](https://github.com/k5tuck/Learn_GoLang/tree/main/channels)
+
+<h5>All Examples and References come from: <a href="https://www.youtube.com/watch?v=YS4e4q9oBaU&t=1155s">Learn Go Programming - Golang Tutorial for Beginners</a></h5>
