@@ -20,7 +20,6 @@ true, bool
 ```
 
 Not an **alias**  
-Zero Value is false  
 Normally used as "state" flags  
 More Commonly used for **_Logical Tests_**
 
@@ -61,9 +60,9 @@ When initializing `int` if no value is assigned, value = 0
 
 (Unsigned - can only be positive) `uint` - bytes
 
-- unint8 rangers from: 0 to 255
-- unint16 ranges from: 0 to 65,535
-- unint32 ranges from: 0 to 4,294,967,295
+- uint8 rangers from: 0 to 255
+- uint16 ranges from: 0 to 65,535
+- uint32 ranges from: 0 to 4,294,967,295
 
 ```Go
 func main (){
@@ -175,12 +174,14 @@ Types: `complex64` and `complex128`
 Zero Value: (0+0i)  
 Built-in Functions:
 
-- complex - make a complex number from two floats
-- real - get the real number as a flaot
-- imag - get the imaginary number as a float
+- `complex` - make a complex number from two floats
+- `real` - get the real portion of the complex number as a float
+- `imag` - get the imaginary portion of the complex number as a float
 
-Complex64 will produce float32 (float32 + float32 = complex64)  
-Complex128 will produce float64 (float64 + float64 = complex128)
+`float32` numbers will produce `complex64` numbers, and vice-versa  
+(float32 + float32 = complex64)  
+`float64` numbers will produce `complex128` numbers, and vice-versa  
+(float64 + float64 = complex128)
 
 ```Go
 func main (){
@@ -239,8 +240,8 @@ Strings
 func main(){
     s := "this a string yo"
     fmt.Println("%v, %T\n", s, s)
-    fmt.Println("%v, %T\n", s[2], s[2])
-    fmt.Println("%v, %T\n", string(s[2]), s[2])
+    fmt.Println("%v, %T\n", s[2], s[2]) // returns ASCII number for selected character
+    fmt.Println("%v, %T\n", string(s[2]), s[2]) // returns character generated from ASCII number
 }
 
 Output:
@@ -249,6 +250,22 @@ this a string yo, string
 105, uint8
 i, uint8
 ```
+
+Concatenation
+
+```Go
+func main(){
+    s := "this a string yo. "
+    s2 := "brought to you from k5tuck"
+    fmt.Println("%v, %T\n", s+s2, s+s2)
+}
+
+Output:
+
+this ia a string yo. brought to you from k5tuck, string
+```
+
+Byte Conversion
 
 ```Go
 func main(){

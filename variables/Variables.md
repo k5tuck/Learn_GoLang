@@ -137,7 +137,7 @@ Output:
 38, int
 ```
 
-In order to convert an integer into a string, you must use the `strconv` package. The `Itoa()` function will convert an integer into an ASCI string.
+In order to convert an integer into a string, you must use the `strconv` package. The `Itoa()` function will convert an integer into an ASCII string.
 
 ```Go
 func main(){
